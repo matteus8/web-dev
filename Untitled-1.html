@@ -5,45 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wholesome Cyber - Resume</title>
     <style>
-        /* ... Your existing styles ... */
-
-        .timeline {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #323;
         }
 
-        .timeline-item {
-            width: 50%;
-            padding: 20px;
-            margin: 20px 0;
+        header {
             background-color: #3498db;
             color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
             border-radius: 8px;
-            position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
 
-        .timeline-item::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: -20px;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 10px 20px 10px 0;
-            border-color: transparent #3498db transparent transparent;
+        .experience {
+            padding: 20px;
         }
 
-        .timeline-item h3 {
+        .experience h2 {
+            color: #3498db;
             margin-bottom: 10px;
         }
 
-        .timeline-item p {
-            margin: 10px 0;
+        .experience-item {
+            margin-bottom: 20px;
         }
 
-        /* Add more styles as needed */
+        .experience-item h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .experience-item p {
+            margin: 5px 0;
+        }
+
+        .skills {
+            padding: 20px;
+        }
+
+        .skills h2 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+
+        .education {
+            padding: 20px;
+        }
+
+        .education h2 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .certifications {
+            padding: 20px;
+        }
+
+        .certifications h2 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .certifications-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .certifications-list li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -56,35 +119,146 @@
         </nav>
     </header>
 
-    <section id="about">
-        <!-- ... Your existing about section ... -->
-    </section>
+    <div class="resume-container">
+        <section id="about">
+            <h2>Contact Information</h2>
+            <p>Colorado | 719-679-2508 | camachomatteus@gmail.com</p>
+            <p>Clearance: TS/SCI</p>
+            <p>IT DevOps Cloud Engineer and Administrator</p>
+            <p>GitHub Projects: <a href="https://github.com/matteus8" target="_blank">matteus8 (Matteus)</a></p>
+        </section>
 
-    <div class="timeline">
-        <div class="timeline-item">
-            <h3>Senior Cloud Engineer – ML/AI Developer</h3>
-            <p>ISSAC CORP, Colorado Springs<br>01/2023 - Present</p>
-            <!-- Add details about the job here -->
+        <section class="experience">
+            <h2>Experience</h2>
+
+            <div class="experience-item">
+                <h3>Senior Cloud Engineer – Cloud Developer</h3>
+                <p>ISSAC CORP, Colorado Springs | 01/2023 - Present</p>
+                <ul>
+                    <li>Designed and implemented Infrastructure-as-Code (IaC) using Terraform, Ansible, and Cloud-Config Files to deploy and manage 50+ Azure resources.</li>
+                    <li>Developed Azure Kubernetes Cluster, enabling seamless orchestration of containerized applications.</li>
+                    <li>Fortified cybersecurity measures, integrating Linux Cron jobs and DoD tools for comprehensive STIG remediation on diverse systems.</li>
+                    <li>Leveraged Bash scripting in Linux and built CI/CD pipelines with Jenkins, ensuring efficient build and release processes.</li>
+                    <li>Explored computer vision capabilities and implemented NLP models to enhance machine learning and AI initiatives.</li>
+                    <li>Utilized data manipulation libraries like Pandas, Numpy, TensorFlow, Matplotlib, and sci-kit-learn for data filtering and analysis.</li>
+                    <li>Explored the modernization of legacy javascript software for decoupling and Docker containerization for improved scalability and portability.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Senior Linux System Administrator</h3>
+                <p>General Dynamics, Colorado Springs | 02/2022 - 01/2023</p>
+                <ul>
+                    <li>Utilized Ansible and Terraform to deploy and manage multiple platforms for diverse customers, ensuring consistent infrastructure provisioning.</li>
+                    <li>Deployed platforms in AWS, Azure, and Red Hat Open Stack environments, ensuring cross-cloud compatibility.</li>
+                    <li>Utilized Tenable to consistently monitor machine compliance, ensuring CATO status is maintained and adherence to DoD STIGs is met.e</li>
+                    <li>Administered and optimized Kubernetes clusters, enabling efficient container orchestration and scaling.</li>
+                    <li>Utilized Jira and Confluence to identified, track and fix bugs.</li>
+                    <li>Developed Ansible plays to automate routine tasks, improving operational efficiency and reducing manual effort.</li>
+                    <li>Collaborated with applications like Jenkins, Gitlab, Docker, Keycloak, Mattermost, Kafka, Prometheus, and Splunk to streamline CI/CD workflows and enhance platform monitoring.</li>
+                    <li>Worked with applications like Jenkins, Gitlab, Docker, Keycloak, Mattermost, Kafka, Prometheus, and Splunk</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Enterprise Service Operations Technician</h3>
+                <p>General Dynamics, Colorado Springs | 10/2021 - 02/2022</p>
+                <ul>
+                    <li>Provided exceptional IT technician support to DoD customers, resolving 30+ phone tickets daily and ensuring optimal network connectivity.</li>
+                    <li>Utilized Windows command prompts (ping, netstat, ipconfig, etc.) to diagnose and troubleshoot network issues promptly.</li>
+                    <li>Analyzed outage and hardware failure data to identify trends and improve IT infrastructure resilience.</li>
+                    <li>Mentored and trained 4 new employees in ticket handling, conflict resolution, and data entry practices, contributing to team productivity and knowledge transfer.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Intelligence Data Analyst</h3>
+                <p>U.S. Army Germany | 09/2018 - 09/2021</p>
+                <ul>
+                    <li>Managed risks and hazards by monitoring and controlling operational processes using effective systems administration techniques.</li>
+                    <li>Maintained and updated extensive intelligence databases and systems to support ongoing and planned projects.</li>
+                    <li>Developed automation scripts and Excel templates to monitor large-scale events and gather intelligence information efficiently.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Intelligence Analyst</h3>
+                <p>U.S. Army Germany | 02/2018 - 09/2021</p>
+                <ul>
+                    <li>Assessed and monitored risks throughout the operational lifecycle to ensure compliance and operational success.</li>
+                    <li>Led technical development and strategic implementation of intelligence initiatives, contributing to mission effectiveness.</li>
+                </ul>
+            </div>
+            </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>Agile DevOps and DevSecOps Practices</li>
+                    <li>Infrastructure-as-Code (IaC)</li>
+                    <li>Containerization and Container Orchestration (Kubernetes)</li>
+                    <li>CI/CD Pipelines and Automation (Jenkins, GitHub, AzureDevOps)</li>
+                    <li>Scripting: Bash, Python, Powershell</li>
+                    <li>WebApp: Javascript, React, Golang, Python</li>
+                    <li>Database: PostgreSQL</li>
+                    <li>Cloud Platforms: AWS, Azure, Red Hat Open Stack</li>
+                    <li>Configuration Management: Ansible, Terraform</li>
+                    <li>Monitoring and Logging: Prometheus, Splunk</li>
+                    <li>Data Analysis: Pandas, Numpy, TensorFlow, Matplotlib</li>
+                </ul>
+            </section>
+        
+            <section class="education">
+                <h2>Education</h2>
+                <p>Bachelor of Science in Cloud Computing – Amazon Web Services</p>
+                <p>Western Governors University, Virginia | 11/2021 - 12/2023</p>
+        
+                <p>Bachelor of Arts in Communications</p>
+                <p>University of Colorado, Colorado | 08/2014 - 02/2018</p>
+        
+                <p>Master of Arts in Christian Ministry</p>
+                <p>Liberty University, Virginia | 08/2018 - 01/2021</p>
+            </section>
+        
+            <section class="certifications">
+                <h2>Certifications</h2>
+                <ul class="certifications-list">
+                    <li>AWS
+                        <ul>
+                            <li>AWS Certified Cloud Practitioner</li>
+                            <li>AWS Certified Developer</li>
+                            <li>AWS Certified Solutions Architect</li>
+                            <li>AWS Certified SysOps Administrator-Associate</li>
+                            <li>(ISC)2 Certified Cloud Security Professional → IAT Level 3</li>
+                        </ul>
+                    </li>
+        
+                    <li>CompTIA
+                        <ul>
+                            <li>CompTIA Security+</li>
+                            <li>CompTIA Cloud+</li>
+                            <li>CompTIA Network+</li>
+                            <li>CompTIA A+</li>
+                            <li>CompTIA IT Operations Specialist</li>
+                            <li>CompTIA Secure Infrastructure Specialist</li>
+                            <li>CompTIA Secure Cloud Professional</li>
+                            <li>CompTIA Cloud Admin Professional</li>
+                            <li>CompTIA Project+</li>
+                            <li>CompTIA Network Security Professional</li>
+                        </ul>
+                    </li>
+        
+                    <li>Other
+                        <ul>
+                            <li>LPI Linux Essentials</li>
+                            <li>ITIL® Foundation Certification</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
         </div>
-
-        <div class="timeline-item">
-            <h3>Senior Linux System Administrator</h3>
-            <p>General Dynamics Mission Systems (GDMS), Colorado Springs<br>02/2022 - 01/2023</p>
-            <!-- Add details about the job here -->
-        </div>
-
-        <!-- Add more timeline items for other jobs -->
-
-    </div>
-
-    <section id="blog">
-        <!-- ... Your existing skills section ... -->
-    </section>
-
-    <!-- Add other sections as needed -->
-
-    <footer>
-        <p>Last updated: Nov. 2023</p>
-    </footer>
-</body>
-</html>
+        
+        <footer>
+            <p>Last updated: Nov. 2023</p>
+        </footer>
+    </body>
+    </html>        
